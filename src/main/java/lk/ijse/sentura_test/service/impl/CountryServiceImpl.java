@@ -17,7 +17,7 @@ public class CountryServiceImpl implements CountryService {
     private List<CountryDTO> cachedCountries = new ArrayList<>();
     private final RestTemplate restTemplate = new RestTemplate();
     @Override
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 6000)
     @PostConstruct
     public void fetchAndCacheCountries() {
         String url = "https://restcountries.com/v3.1/all";
